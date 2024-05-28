@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+    <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+      <div class="navbar-item has-dropdown is-hoverable">
+        <a class="navbar-link">
+          More Research
+        </a>
+        <div class="navbar-dropdown">
+          <a class="navbar-item" href="https://rg-lcd.github.io/">
+            Reward Guided Latent Consistency Distillation
+          </a>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</nav>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+    content="We proposed T2V-Turbo, which achieves both fast and high-quality video generation by breaking the quality bottleneck of Video Consistency Model.">
+  <meta name="keywords" content=" Text-to-Video, Consistency Model, Learning from Human/AI Feedback">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>T2V-Turbo: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback
+  </title>
+  <!-- custom fonts -->
+  <link rel="stylesheet" type="text/css"
+    href="https://cdn.rawgit.com/dreampulse/computer-modern-web-font/master/fonts.css">
+  <link href="https://fonts.cdnfonts.com/css/proxima-nova-2" rel="stylesheet">
+  <!-- end custom fonts -->
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" type="svg" href="./static/rocket.svg">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+</head>
+
+<body>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title"><span
+                style="font-family: 'Courier New', monospace;">T2V-Turbo</span>: Breaking the Quality Bottleneck of
+              Video Consistency
+              Model with Mixed Reward Feedback
+            </h1>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block">
+                <a href="https://sites.google.com/view/jiachenli/home">Jiachen Li</a><sup>1</sup>
+              </span>
+              <span class="author-block">
+                <a href="https://weixi-feng.github.io/">Weixi Feng</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://tsujuifu.github.io/">Tsu-Jui Fu</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://wangxinyilinda.github.io/">Xinyi Wang</a><sup>1</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.google.com/site/sugatobasu/">Sugato Basu</a><sup>2</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://wenhuchen.github.io//">Wenhu Chen</a><sup>3</sup>,
+              </span>
+              <span class="author-block">
+                <a href="https://sites.cs.ucsb.edu/~william/">William Yang Wang</a><sup>1</sup>
+              </span>
+            </div>
+
+
+            <div class="is-size-5 publication-authors" style="margin-top: 15px;">
+              <span class="author-block"><sup>1</sup>UC Santa Barbara,</span>
+              <span class="author-block"><sup>2</sup>Google,</span>
+              <span class="author-block"><sup>3</sup>University of Waterloo</span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- PDF Link. -->
+                <span class="link-block">
+                  <!-- <a target="_blank" href="https://arxiv.org/pdf/2403.11027.pdf" -->
+                  <a target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper (Coming Soon)</span>
+                  </a>
+                </span>
+                <span class="link-block">
+                  <!-- <a target="_blank" href="https://arxiv.org/abs/2403.11027" -->
+                  <a target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>ArXiv (Coming Soon)</span>
+                  </a>
+                </span>
+                <!-- Code Link. -->
+                <span class="link-block">
+                  <a target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code (Coming Soon)</span>
+                  </a>
+                </span>
+                <!-- Dataset Link. -->
+                <!-- <span class="link-block">
+                  <a target="_blank" href="https://github.com/google/nerfies/releases/tag/0.1"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="far fa-images"></i>
+                    </span>
+                    <span>Data</span>
+                  </a>
+                </span> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <!-- Abstract. -->
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+              Diffusion-based text-to-video (T2V) models have achieved significant success but continue to be hampered
+              by the
+              slow sampling speed of their iterative sampling processes. To address the challenge, consistency models
+              have been
+              proposed to facilitate fast inference, albeit at the cost of sample quality. In this work, we aim to break
+              the
+              quality bottleneck of a video consistency model (VCM) to achieve <span style="font-weight: bold">both fast
+                and high-quality video generation</span>.
+              We introduce <span style="font-family: 'Courier New', monospace; font-weight: bold">T2V-Turbo</span>,
+              which integrates feedback from a mixture of differentiable reward models into the
+              consistency distillation (CD) process of a pre-trained T2V model. Notably, we directly optimize rewards
+              associated with
+              single-step generations that arise naturally from computing the CD loss, effectively bypassing the memory
+              constraints
+              imposed by backpropagating gradients through an iterative sampling process. Remarkably, the 4-step
+              generations from our
+              <span style="font-family: 'Courier New', monospace; font-weight: bold">T2V-Turbo</span> achieve the
+              highest total score on <a href="https://vchitect.github.io/VBench-project/">VBench</a>, even surpassing <a
+                href="https://research.runwayml.com/gen2/">Gen-2</a> and
+              <a href="https://pika.art/">Pika</a>. We further conduct human evaluations to corroborate the results,
+              validating that the 4-step
+              generations from our <span
+                style="font-family: 'Courier New', monospace; font-weight: bold">T2V-Turbo</span> are preferred over the
+              50-step DDIM samples from their teacher models, representing more
+              than a tenfold acceleration while improving video generation quality.
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Abstract. -->
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container is-max-desktop">
+
+      <!-- Training Pipeline. -->
+      <div class="columns is-centered">
+        <div class="column is-full-width">
+          <h2 class="title is-3">Overview of Training Pipeline</h2>
+
+          <img src="./static/images/pipeline.png" alt="" srcset="">
+          <div class="content has-text-justified">
+            <p>
+              Overview of the training pipeline of our <span
+                style="font-family: 'Courier New', monospace; font-weight: bold">T2V-Turbo</span>. We integrate reward
+              feedback from both an image-text RM and a video-text RM into the VCD procedures by backpropagating
+              gradient through the single-step generation process of our <span
+                style="font-family: 'Courier New', monospace; font-weight: bold">T2V-Turbo</span>
+            </p>
+          </div>
+        </div>
+      </div>
+      <!--/ Training Pipeline. -->
+
+      <div class="container is-max-desktop">
+
+        <!-- Acknowledgement. -->
+        <div class="columns is-centered">
+          <div class="column is-full-width">
+            <h2 class="title is-3">Acknowledgement</h2>
+
+            <div class="content has-text-justified">
+              <p>
+                This project would not be possible without the following wonderful prior work.
+              </p>
+
+              <p>
+                <a href="https://github.com/luosiallen/latent-consistency-model">Latent Consistency Model</a> gave
+                inspiration to our method,
+                <a href="https://github.com/tgxs002/HPSv2">HPSv2.1</a>, <a
+                  href="https://huggingface.co/OpenGVLab/ViCLIP">ViCLIP</a> and <a
+                  href="https://huggingface.co/OpenGVLab/InternVideo2-Stage2_1B-224p-f4">InternVid2</a>
+                provide great reward models, and
+                <a href="https://github.com/huggingface/diffusers/">Diffusers🧨</a> offered a strong diffusion model
+                training framework for building our code from.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!--/ Acknowledgement. -->
+  </section>
+
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{li2024t2vturbo,
+  title={T2V-Turbo: Breaking the Quality Bottleneck of Video Consistency Model with Mixed Reward Feedback},
+  author={Jiachen Li and Weixi Feng and Tsu-Jui Fu and Xinyi Wang and Sugato Basu and Wenhu Chen and William Yang Wang},
+  journal={ARXIV},
+  year={2024}
+}
+      </code></pre>
+    </div>
+  </section>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="content has-text-centered">
+        <a class="icon-link" href="https://proceedings.mlr.press/v202/li23av/li23av.pdf">
+          <i class="fas fa-file-pdf"></i>
+        </a>
+        <a class="icon-link" href="https://github.com/cfpo-icml23/cfpi" class="external-link" disabled>
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+            <p style="text-align: center
+              ">
+              Website templated borrowed from <a href="https://github.com/nerfies/nerfies.github.io">nerfies.</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</body>
+
+</html>
